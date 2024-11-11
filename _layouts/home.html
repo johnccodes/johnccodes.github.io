@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<header class="intro-header" style="opacity: .4; background-image: url('{{ site.baseurl }}/assets/keychron-keycaps.jpg');">
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row animated-text">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">            
+            <div class="site-heading">
+              <span class="subheading">{{ site.home_title }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+</header>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
+  col-xs-12 sidebar-container">
+            {% include short-about.html %}
+
+            {% include featured-tags.html %}
+        </div>
+
+        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
+      col-xs-12 postlist-container">
+            {{ content }}
+        </div>
+    </div>
+</div>
